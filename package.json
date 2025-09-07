@@ -5,6 +5,7 @@
     "@nomicfoundation/hardhat-ignition": "^3.0.2",
     "@nomicfoundation/hardhat-ignition-viem": "^3.0.2",
     "@nomicfoundation/hardhat-keystore": "^3.0.1",
+    "@nomicfoundation/hardhat-verify": "^3.0.1",
     "hardhat": "^3.0.4"
   },
   "dependencies": {
