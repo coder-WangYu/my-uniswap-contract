@@ -33,16 +33,15 @@ const config: HardhatUserConfig = {
     // 测试网（使用 hardhat-keystore）
     sepolia: {
       type: "http",
-      url: configVariable("SEPOLIA_RPC_URL") || "",
-      accounts: configVariable("SEPOLIA_PRIVATE_KEY") ? [configVariable("SEPOLIA_PRIVATE_KEY")] : [],
-      chainId: 11155111,
+      url: configVariable("SEPOLIA_RPC_URL"),
+      accounts: [configVariable("SEPOLIA_PRIVATE_KEY")],
     },
   },
 
   // 验证配置（使用 hardhat-keystore）
   etherscan: {
-    apiKey: configVariable("ETHERSCAN_API_KEY") || "",
+    apiKey: configVariable("ETHERSCAN_API_KEY"),
   },
-};
+} as HardhatUserConfig;
 
 export default config;
