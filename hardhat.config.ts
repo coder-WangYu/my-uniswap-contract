@@ -1,12 +1,12 @@
 import { configVariable } from "hardhat/config";
 import type { HardhatUserConfig } from "hardhat/config";
-import hardhatIgnitionViemPlugin from "@nomicfoundation/hardhat-ignition-viem";
+import hardhatToolboxViemPlugin from "@nomicfoundation/hardhat-toolbox-viem";
 import hardhatKeystore from "@nomicfoundation/hardhat-keystore";
 
 const config: HardhatUserConfig = {
   // 插件配置
   plugins: [
-    hardhatIgnitionViemPlugin,
+    hardhatToolboxViemPlugin,
     hardhatKeystore,
   ],
   
